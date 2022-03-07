@@ -75,6 +75,7 @@ body {
 .card .first-cta .container img {
   position: relative;
   top: 0.8em;
+  margin-right: 1em;
 }
 
 .card .first-cta .container .container {
