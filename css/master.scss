@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --primary-color:hsl(245, 75%, 52%);
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card{
+    text-align: center;
+    margin: 3.125em auto;
+    background-color: hsl(0, 0%, 100%);
+    width: 75%;
+    border-radius: 1.75em;
+
+    .hero-img{
+        width:100%;
+        border-radius: 1.75em 1.75em 0 0;
+    }
+
+    h1{
+        font-weight: 900;
+        color: hsl(223, 47%, 23%);
+        font-size: 1.4em;
+        
+    }
+
+    .main-copy{
+        width: 70%;
+        margin: 0 auto;
+        font-size: 1em;
+        color: hsl(224, 23%, 55%);
+        margin-bottom: 2em;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+
+    .first-cta{
+        padding-bottom: 2em;
+        background-color: hsla(225, 100%, 94%, 0.486);
+        flex-shrink: 0;
+        width: 85%;
+        margin: 0 auto;
+        border-radius: 0.75em;
+        margin-bottom: 2em;
+        
+
+
+        .container{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+
+            img{
+                position: relative;
+                top: 0.8em;
+                
+
+            }
+
+            .container{
+                flex-direction: column;
+                position: relative;
+                right: 1em;
+                top: .3em;
+
+                
+
+                .Annual-Plan{
+                    margin: 0;
+                    margin-top: 1em;
+                    font-weight: 900;
+                    color: hsl(223, 47%, 23%);
+                }
+
+                .price{
+                    margin: 0;
+                    color: hsl(224, 23%, 55%);
+
+                }
+            }
+
+            .change-btn{
+                position: relative;
+                top: 1em;
+                font-weight: 700;
+                color: hsl(258, 79%, 54%);
+                text-decoration: none;
+            
+                &:hover{
+                    text-decoration: underline;
+                    font-weight: 900;
+                }
+
+            }
+
+        }
+    }
+
+    .payment-btn{
+        display:block;
+        background-color: var(--primary-color);
+        color: white;
+        font-weight: 900;
+        text-decoration: none;
+        padding: 1em 0;
+        width: 85%;
+        margin: 0 auto 2em auto;
+        border-radius: 0.75em ;
+
+        &:hover{
+            background-color:hsl(258, 79%, 54%);
+        }
+
+    }
+
+    .cancel-btn{
+        display: inline-block;
+        margin:0;
+        text-decoration: none;
+        color: hsl(224, 23%, 55%);
+        padding: 0 0 2em 0;
+
+        &:hover{
+            text-decoration: underline;
+            font-weight: 700;
+            color: hsl(223, 47%, 23%);
+        }
+    }
+}
+
+.attribution{
+    position: relative;
+    bottom: 3em;
+
+    a{
+        text-decoration: none;
+        color: var(--primary-color);
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    p{
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width : 1200px){
+
+    .card{
+        width: 30%;
+    }
+
+}
+
+
+
+
+
